@@ -42,7 +42,7 @@ variable "instance_id" {
 }
 
 variable "instance_type" {
-  description = " The type of cloud product that the eip instance to bind."
+  description = "The type of cloud product that the eip instance to bind."
   default     = ""
 }
 

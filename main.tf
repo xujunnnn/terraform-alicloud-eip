@@ -14,6 +14,8 @@ module "eip" {
   instance_charge_type = var.instance_charge_type
   period               = var.period
   isp                  = var.isp
+  resource_group_id    = var.resource_group_id
+  tags                 = var.tags
 }
 
 module "eip-association" {
