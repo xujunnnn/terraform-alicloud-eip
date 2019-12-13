@@ -88,7 +88,7 @@ module "eip" {
 |instance_charge_type|Elastic IP instance charge type. Valid values are PrePaid and PostPaid. Default to PostPaid.|string|"PostPaid"|no|
 |period|The duration that you will buy the resource, in month. It is valid when instance_charge_type is PrePaid.Default to 1. Valid values: [1-9, 12, 24, 36]. At present, the provider does not support modify period and you can do that via web console.|int|1|no|
 |isp|The line type of the Elastic IP instance. Default to BGP. Other type of the isp need to open a whitelist.|string|"BGP"|no|
-|instance_id|"The ID of the ECS or SLB instance or Nat Gateway."|string|   |yes|
+|instance_id|The ID of the ECS or SLB instance or Nat Gateway.|string|   |yes|
 |instance_type|The type of cloud product that the eip instance to bind.|string|""|no|
 |private_ip_address|The private IP address in the network segment of the vswitch which has been assigned.|string|""|no|
 |resource_group_id| The Id of resource group which the eip belongs to |string|""|no|
@@ -109,6 +109,8 @@ module "eip" {
 | this_eip_address| The elastic ip address |
 | this_eip_resource_group_id| The Id of resource group which the eip belongs to |
 | this_eip_tags | Tags assigned to the eip|
+| this_eip_association_instance_id | The instance id associated with the eip |
+| this_eip_association_instance_type | The instance type associated with the eip |
 
 Authors
 ---------

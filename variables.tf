@@ -50,3 +50,14 @@ variable "private_ip_address" {
   description = "The private IP address in the network segment of the vswitch which has been assigned."
   default     = ""
 }
+
+variable "tags" {
+  description = "A mapping of tags to assign to the resource."
+  type        = map(string)
+  default     = {}
+}
+
+variable "resource_group_id" {
+  description = "The Id of resource group which the eip belongs."
+  default     = ""
+}
