@@ -53,6 +53,7 @@ func TestTerraformBasicEip(t *testing.T) {
 	actualInstanceType := terraform.Output(t, terraformOptions, "this_eip_association_instance_type")
 	// Verify we're getting back the outputs we expect
 	assert.Equal(t, eipName, actualName)
+	
 	assert.Equal(t, "PayByBandwidth", actualInternetChargeType)
 	assert.Equal(t, "PostPaid", actualInstanceChargeType)
 	assert.Equal(t, "10", actualBandwidth)

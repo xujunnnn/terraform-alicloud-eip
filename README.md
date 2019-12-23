@@ -1,4 +1,6 @@
 # terraform-alicloud-eip
+[中文文档]（README-ZH.md）
+
 Terraform module which creates Eip(elastic IP resource) and associate the eip with a cloud instance on Alibaba Cloud.
 
 These types of resources are supported:
